@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>melanQ Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#purchase">Purchase</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="about" class="section about-container">
+  <img src="images/logo 1.png" alt="melanQ Logo" class="main-logo">
+  <div class="product-images">
+    <img src="images/Group 1.png" alt="melanQ Products">
+  </div>
+  <h1 class="section-title">HAIR WATER FOR ALL HAIR TYPES + COENZYME Q10.</h1>
+  <p class="description">Revive your natural hair color without dyes. Gentle, effective, and made for everyone.</p>
+  <p class="description">At melanQ, we believe in simple, natural solutions to help you feel confident. Our enzymatic hair tonic works from within the structure of your hair to gradually restore its original color – no dyes, no damage. melanQ also prevents dandruff, making it the perfect choice for healthy, vibrant hair.</p>
+</section>
+
+<section id="usage" class="section usage-container">
+  <h1 class="section-title">WHAT MAKES MELANQ UNIQUE?</h1>
+  <ul>
+    <li>Works on all hair types and colors.</li>
+    <li>Gradual and natural restoration.</li>
+    <li>Eco-friendly and cruelty-free.</li>
+  </ul>
+  <h1 class="section-title">INGREDIENTS</h1>
+  <ul>
+    <li>Aqua</li>
+    <li>Propylene glycol</li>
+    <li>Sulfur</li>
+    <li>Ammonium chloride</li>
+    <li>Silver acetate</li>
+    <li>Perfume</li>
+  </ul>
+  <p class="description">Free from parabens and harsh chemicals.</p>
+</section>
+
+<section id="how-it-works" class="section how-it-works-container">
+  <h1 class="section-title">HOW IT WORKS</h1>
+  <p class="description">Usage Instructions:</p>
+  <ol>
+    <li>Apply a small amount of melanQ to slightly damp hair after dewing.</li>
+    <li>Comb through to ensure even distribution.</li>
+    <li>Allow your hair to dry naturally or use a hairdryer.</li>
+    <li>For optimal results, expose your hair to direct sunlight after application.</li>
+  </ol>
+  <p class="description">At the beginning of use, apply melanQ 3–4 times per week, preferably in the morning. Once your hair begins to return to its original color (within a week), reduce application to 1–2 times per week as needed.</p>
+</section>
+
+<section id="purchase" class="section purchase-container">
+  <h1 class="section-title">PURCHASE</h1>
+  <div class="purchase-content">
+    <img src="images/product image.png" alt="melanQ Product" class="purchase-image">
+    <div class="purchase-info">
+      <img src="images/white logo 1.png" alt="melanQ Logo" class="purchase-logo">
+      <p class="purchase-text">"Restore your natural hair color gradually, prevent dandruff, and enhance your hair's health."</p>
+      <p class="price">€24.99</p>
+      <button class="buy-now">buy now</button>
+      <p class="purchase-details">Details:<br>
+        • melanq – 125 ml<br>
+        • Delivery 3–5 business days</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact-container">
+  <h1 class="section-title">CONTACT</h1>
+  <p class="description">Have questions or need help? Reach out to us!</p>
+  <input type="email" class="email-input" placeholder="Enter your email">
+  <div class="contact-details">
+    <p>Email: support@melanq.com</p>
+    <p>Phone: (+420) 777 777 777</p>
+    <p>Instagram: @melanq</p>
+    <p>Facebook: @melanq</p>
+  </div>
+  <div class="footer">
+    <img src="images/white logo 1.png" alt="melanQ Logo">
+  </div>
+</section>
+
+<!-- Only 1 JavaScript for smooth center scroll -->
+<script>
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const target = document.querySelector(targetId);
+
+      if (target) {
+        const offsetTop = target.offsetTop;
+        const sectionHeight = target.offsetHeight;
+        const windowHeight = window.innerHeight;
+
+        window.scrollTo({
+          top: offsetTop - (windowHeight / 2) + (sectionHeight / 2),
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
