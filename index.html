@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MelonQ – Restore Your Natural Hair Color</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- Modal Overlay -->
+<div id="modal-overlay">
+  <div id="modal">
+    <div class="modal-header">
+      <img src="assets/images/product image.png" alt="Product Image">
+      <div>
+        <img src="assets/logo/logo 1.png" alt="Logo" style="height: 140px; margin-top: -20px; object-fit: contain;">
+
+        <div class="quantity-controls">
+          <button id="decrease">-</button>
+          <span id="quantity">1</span>
+          <button id="increase">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-row"><span>subtotal:</span><span>650czk</span></div>
+    <div class="modal-row"><span>shipping:</span><span>200czk</span></div>
+    <div class="modal-row"><span>taxes:</span><span>0</span></div>
+    <div class="modal-total">total: 850czk</div>
+    <div class="modal-buttons">
+      <button>Shipping Address</button>
+      <button id="order-confirm">order</button>
+    </div>
+  </div>
+</div>
+  
+  <!-- Success Animation Overlay -->
+  <div id="success-check-overlay">
+    <div id="success-check">
+      <div class="circle">
+        <div class="checkmark"></div>
+      </div>
+    </div>
+  </div>
+
+<body>
+
+    <header id="header">
+        <nav class="section-bar">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#purchase">Purchase</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <section id="hero">
+        <img src="assets/logo/logo 1.png" alt="MelonQ Logo" class="main-logo" style="display: block; margin: 0 auto; max-width: 880px;" />
+      
+        <div class="brand-images" style="display: flex; justify-content: center; gap: 2rem; margin: 3rem 0;">
+          <img src="assets/images/box left.png" alt="Product Box Left" style="max-width: 200px; height: auto;" />
+          <img src="assets/images/box midle.png" alt="Product Box Middle" style="max-width: 200px; height: auto;" />
+          <img src="assets/images/box right.png" alt="Product Box Right" style="max-width: 200px; height: auto;" />
+        </div>
+      
+        <h1 style="text-align: center; font-size: 2.5rem; font-weight: 800; margin: 3rem 0 5rem 0;">Hair water for all hair types + Coenzyme Q10.</h1>
+        <p style="text-align: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 5rem;">Revive your natural hair color without dyes. Gentle, effective, and made for everyone.</p>
+        <p style="font-family: 'Courier New', Courier, monospace; font-size: 1rem; font-weight: bold; max-width: 800px; margin: 0 auto 5rem auto; text-align: center; color: white;">
+          At melanq, we believe in simple, natural solutions to help you feel confident. Our enzymatic hair tonic works from within the structure of your hair to gradually restore its original color – no dyes, no damage. melanq also prevents dandruff, making it the perfect choice for healthy, vibrant hair.
+        </p>
+      
+        <h2 style="text-align: center; font-weight: 800; margin-top: 3rem;">What makes MelonQ unique?</h2>
+        <ul style="text-align: center; font-weight: bold; list-style: none; padding: 0;">
+          <li>Works on all hair types and colors.</li>
+          <li>Gradual and natural restoration.</li>
+          <li>Eco-friendly and cruelty-free.</li>
+        </ul>
+      
+        <h2 style="text-align: center; font-weight: 800; margin-top: 3rem;">Our formula:</h2>
+        <p style="text-align: center; font-weight: bold; max-width: 800px; margin: 0 auto 1.5rem;">
+          Our formula is enriched with Coenzyme Q10, known for its restorative properties, alongside these carefully selected ingredients:
+        </p>
+        <ul style="text-align: center; font-weight: bold; list-style: none; padding: 0;">
+          <li>Aqua</li>
+          <li>Propylene glycol</li>
+          <li>Sulfur</li>
+          <li>Ammonium chloride</li>
+          <li>Silver acetate</li>
+          <li>Perfume</li>
+        </ul>
+        <p style="text-align: center; font-weight: bold;">Free from parabens and harsh chemicals.</p>
+      </section>
+      
+      
+      <section id="usage">
+        <h2 style="text-align: center; font-size: 2rem; font-weight: 800; margin-top: 6rem;">How It Works</h2>
+        <ol style="max-width: 800px; margin: 2rem auto; font-weight: bold;">
+          <li>Apply a small amount of MelonQ to slightly damp hair after dewing.</li>
+          <li>Comb through to ensure even distribution.</li>
+          <li>Allow your hair to dry naturally or use a hairdryer.</li>
+          <li>Expose your hair to direct sunlight after application.</li>
+        </ol>
+        <p style="max-width: 800px; margin: 2rem auto; font-weight: bold;">At the beginning of use, apply MelonQ 3–4 times per week, preferably in the morning. Once your hair begins to return to its original color (within a week), reduce application to 1–2 times per week as needed.</p>
+      </section>
+      
+      <section id="purchase" style="color: white; padding: 4rem 2rem;">
+        <h2 style="text-align: center; font-size: 2rem; font-weight: 800;">Purchase</h2>
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 3rem; flex-wrap: wrap; margin-top: 3rem;">
+          <video src="assets/video/product.mp4" autoplay muted loop style="max-width: 300px; border-radius: 8px;"></video>
+          <div style="max-width: 350px;">
+            <img src="assets/logo/white logo 1.png" alt="MelonQ Logo" style="max-width: 180px; margin-bottom: 1rem;">
+            <p style="font-family: 'Roboto Mono', monospace; font-size: 0.9rem; margin: 0 0 1rem; color: white;">"Restore your natural hair color gradually, prevent dandruff, and enhance your hair's health."</p>
+            <p style="font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem;">€24.99</p>
+            <button style="background: white; color: black; padding: 0.5rem 1rem; border: none; border-radius: 999px; font-weight: bold; cursor: pointer; margin-bottom: 1rem;">buy now</button>
+            <p style="font-family: 'Roboto Mono', monospace; font-size: 0.9rem; color: white;">
+              <strong>Details:</strong><br>
+              • melanq – 125 ml<br>
+              • Delivery 3–5 business days.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Have questions or need help? Reach out to us!</p>
+        <form class="contact-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Send</button>
+        </form>
+        <div class="contact-details">
+          <p>Email: support@melanq.com</p>
+          <p>Phone: (+420) 777 777 777</p>
+          <p>Instagram: @melanq</p>
+          <p>Facebook: @melanq</p>
+        </div>
+      </section>
+      
+      <footer>
+        <img src="assets/logo/white logo 1.png" alt="MelonQ White Logo" class="footer-logo" />
+      </footer>
+      
+      <script>
+        const buyButton = document.querySelector('#purchase button');
+        const modalOverlay = document.getElementById('modal-overlay');
+        const orderConfirm = document.getElementById('order-confirm');
+        const successCheckOverlay = document.getElementById('success-check-overlay');
+      
+        buyButton?.addEventListener('click', () => {
+          modalOverlay.style.display = 'flex';
+        });
+      
+        modalOverlay?.addEventListener('click', (e) => {
+          if (e.target.id === 'modal-overlay') {
+            modalOverlay.style.display = 'none';
+          }
+        });
+      
+        orderConfirm?.addEventListener('click', () => {
+          modalOverlay.style.display = 'none';
+          successCheckOverlay.style.display = 'flex';
+      
+          setTimeout(() => {
+            successCheckOverlay.style.display = 'none';
+          }, 1000);
+        });
+      
+        // Quantity Button Logic
+        const quantitySpan = document.getElementById('quantity');
+        const increaseBtn = document.getElementById('increase');
+        const decreaseBtn = document.getElementById('decrease');
+      
+        increaseBtn?.addEventListener('click', () => {
+          let current = parseInt(quantitySpan.textContent);
+          if (current < 10) quantitySpan.textContent = current + 1;
+        });
+      
+        decreaseBtn?.addEventListener('click', () => {
+          let current = parseInt(quantitySpan.textContent);
+          if (current > 1) quantitySpan.textContent = current - 1;
+        });
+      </script>
+      
+      
+
+      
+      
+      
+      
+      
